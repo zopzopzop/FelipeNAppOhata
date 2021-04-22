@@ -19,21 +19,33 @@ public class PersonagemDAO {
 
     //selheciona o personagem escolhido
 public void edita(Personagem personagem){
-        Personagem personagemEscolhido = null;
-        for (Personagem p: personagens){
-            if(p.getId()== personagem.getId()){
-                personagemEscolhido = p;
-            }
-
+        Personagem personagemEscolhido = buscaPersonagenId(personagem);
             if (personagemEscolhido != null){
                 int posicaoDoPersonagem = personagens.indexOf(personagemEscolhido);
                 personagens.set(posicaoDoPersonagem, personagem);
             }
+
+
+}
+private  Personagem buscaPersonagenId(Personagem personagem) {
+
+    for (Personagem p : personagens) {
+        if (p.getId() == personagem.getId()) {
+            return p;
         }
 
+    }
+    return null;
 }
     //retorna os personagens salvor no meu personagen dao
     public List<Personagem> todos() {
         return new ArrayList<>(personagens);
+    }
+
+    public void remove(Personagem personagem) {
+        Personagem personagemDevolvido = buscaPersonagenId(personagem);
+        if(personagemDevolvido != null) {
+            personagens.remove(personagemDevolvido);
+        }
     }
 }
