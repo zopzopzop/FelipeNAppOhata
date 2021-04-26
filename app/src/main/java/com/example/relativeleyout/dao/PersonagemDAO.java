@@ -7,6 +7,8 @@ import java.util.List;
 
 public class PersonagemDAO {
 
+
+
     private  final  static List<Personagem> personagens = new ArrayList<>();
     private static int contadorDeId = 1;
 
