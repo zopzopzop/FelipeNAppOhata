@@ -24,6 +24,7 @@ public class Personagem implements Serializable {
 
     }
 
+
     @NonNull
     @Override
     public String toString() {

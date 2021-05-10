@@ -31,6 +31,7 @@
         android:inputType="date"
         android:text="Nascimento" />
 
+
     <Button
         android:id="@+id/salvar_button"
         android:layout_width="match_parent"

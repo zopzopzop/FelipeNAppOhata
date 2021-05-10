@@ -16,7 +16,6 @@ import static com.example.relativeleyout.ui.activites.ConstanteActivity.CHAVE_PE
 
 public class FormularioPersonagemActivity extends AppCompatActivity {
 
-
     public static final String TITULO_APPBAR_NOVO_PERSONAGEM = "Novo Personagens";
     private static final String TITULO_APPBAR_EDITA_PERSONAGEM = "Editar Personagem";
     private EditText camponome;

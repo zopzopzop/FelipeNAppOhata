@@ -132,6 +132,7 @@ public class ListaPersonagemActivity extends AppCompatActivity {
 
     private void ConfingLista() {
 
+
         ListView listaDePersonagem = findViewById(R.id.lista_personagens);
         //final List<Personagem> personagems = dao.todos();
         configuraAdapter(listaDePersonagem);
